@@ -1,0 +1,20 @@
+type Query {
+   greeting:String
+   students:[Student]
+   employee:[employee]
+   empById(id:ID!):employee
+}
+
+type Student {
+   id:ID!
+   firstName:String
+   lastName:String
+   password:String
+   collegeId:String
+}
+type employee{
+    id:ID!
+    name:String
+    city:String
+
+}
